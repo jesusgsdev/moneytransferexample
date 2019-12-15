@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"senderAccountIBAN\": \"GB26MIDL40051512345671\",\n\t\"recipientAccountIBAN\": \"GB26MIDL40051512345675\",\n\t\"amount\": 100.0\n}"
+					"raw": "{\n    \"senderAccountIBAN\": \"GB26MIDL40051512345671\",\n    \"recipientAccountIBAN\": \"GB26MIDL40051512345675\",\n    \"amount\": 100\n}"
 				},
 				"url": {
 					"raw": "http://localhost:7000/transfer",
@@ -37,7 +37,7 @@
 			"response": []
 		},
 		{
-			"name": "TransferMoney Copy",
+			"name": "Retrieve Account Balance",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -46,7 +46,17 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:7000/account/balance/GB26MIDL40051512345671",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"account",
+						"balance",
+						"GB26MIDL40051512345671"
+					]
 				},
 				"description": "Transfer Money from Account A to B"
 			},
