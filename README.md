@@ -35,9 +35,10 @@ The project has been scanned by Snyk (https://snyk.io/) to ensure there is no vu
 - I haven't implemented builder pattern in some classes to reduce lines of code and improve simplicity for this exercise.
 - I haven't take too much into account GDPR or PII data for this example.
 - To keep it simple, I haven't added any DockerFile. The app will run as standalone java application.
+- There is no real database. I decided to use Maps to simplify the example, also H2 in memory database could have been used.
 
 ## Test Coverage
-Test coverage in classes with logic is 100%, these classes are within exceptions, htthandler, service and dao packages.
+Test coverage in classes with logic is 100%, these classes are within exceptions, httphandler, service and dao packages.
 
 ## How to test using maven
 To run the test suite, just execute the command `mvn test` and all the tests will be executed
