@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "ce5a19d3-ae90-4fdb-aa58-36828ce73461",
+		"name": "MoneyTransfers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TransferMoney",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"senderAccountIBAN\": \"GB26MIDL40051512345671\",\n\t\"recipientAccountIBAN\": \"GB26MIDL40051512345675\",\n\t\"amount\": 100.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"transfer"
+					]
+				},
+				"description": "Transfer Money from Account A to B"
+			},
+			"response": []
+		},
+		{
+			"name": "TransferMoney Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "Transfer Money from Account A to B"
+			},
+			"response": []
+		}
+	]
+}
