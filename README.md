@@ -1,3 +1,4 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/jesusgsdev/moneytransferexample/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/jesusgsdev/moneytransferexample?targetFile=pom.xml)
 # RESTful API for Money Transfer
 
 #### RESTful API (including data model and the backing implementation) for money transfers between accounts.
@@ -15,6 +16,9 @@
 ### Why I used Javalin as framework
 After reading the requirements for this API, I found that Javalin had the best balance between simplicity and performance. The server starts in 200ms.
 
+### Security
+The project has been scanned by Snyk (https://snyk.io/) to ensure there is no vulnerabilities with the libraries used.
+
 ### Simplifications and decisions made
 - I used Java 11 because I am more familiar with it than with Kotlin even I worked a little bit with it.
 - I haven't used Lombok to reduce the number of imported libraries.
@@ -30,6 +34,7 @@ After reading the requirements for this API, I found that Javalin had the best b
 - Responses are done in String rather than using DTOs or JSON to simplify the project.
 - I haven't implemented builder pattern in some classes to reduce lines of code and improve simplicity for this exercise.
 - I haven't take too much into account GDPR or PII data for this example.
+- To keep it simple, I haven't added any DockerFile. The app will run as standalone java application.
 
 ## Test Coverage
 Test coverage in classes with logic is 100%, these classes are within exceptions, htthandler, service and dao packages.
