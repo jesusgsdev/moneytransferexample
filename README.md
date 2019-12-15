@@ -1,5 +1,5 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/jesusgsdev/moneytransferexample/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/jesusgsdev/moneytransferexample?targetFile=pom.xml)
-# RESTful API for Money Transfer
+# RESTful API for Money Transfers
 
 #### RESTful API (including data model and the backing implementation) for money transfers between accounts.
 
