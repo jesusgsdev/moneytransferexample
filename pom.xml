@@ -13,7 +13,7 @@
         <dependency>
             <groupId>io.javalin</groupId>
             <artifactId>javalin</artifactId>
-            <version>3.6.0</version>
+            <version>3.13.4</version>
         </dependency>
 
         <dependency>
